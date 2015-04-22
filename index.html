@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Pacific Gas and Electric Company</title>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <!-- Using Bootstrap CDN for now.Change it back once going in QA & Prod -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    
+    <!--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
+    
+    
+    
+    <link href="css/ui-lightness/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <link href="css/map.css" rel="stylesheet">
+    <link href="css/flat-ui.css" rel="stylesheet">
+    
+    <script type="text/javascript">
+        var utag_data={
+            "page_type":"Mobile",
+            "page_class":"Home or Index Page",
+            "page_name":"Home or Index Page",
+            "page_title":"Home or Index Page",
+            "site_mobile":"true"
+        };
+    </script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+
+        // Add a script element as a child of the body
+        function downloadJSAtOnload() {
+            if (typeof console == "undefined") {
+                this.console = {
+                    log: function () { },
+                    info: function () { },
+                    error: function () { },
+                    warn: function () { }
+                };
+            }
+
+            var element = document.createElement("script");
+            element.src = "js/lib/require.js";
+            element.setAttribute('data-main', 'js/main.js');
+            document.body.appendChild(element);
+        }
+
+        // Check for browser support of event handling capability
+        if (window.addEventListener)
+            window.addEventListener("load", downloadJSAtOnload, false);
+        else if (window.attachEvent)
+            window.attachEvent("onload", downloadJSAtOnload);
+        else window.onload = downloadJSAtOnload;
+        
+
+
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="header" class="col-lg-12 voffset1"></div>
+            <div id="content" class="col-lg-12"></div>
+            <div id="footer" class="col-lg-12 voffset2"></div>
+        </div>
+    </div>
+</body>
+</html>
+
